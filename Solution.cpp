@@ -1,8 +1,7 @@
 //Approach using Priority Queue
 class Solution {
  public:
-  int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst,
-                        int k) {
+  int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst,int k) {
     vector<vector<pair<int, int>>> graph(n);
     using T = tuple<int, int, int>;  // (d, u, stops)
     priority_queue<T, vector<T>, greater<>> minHeap;
