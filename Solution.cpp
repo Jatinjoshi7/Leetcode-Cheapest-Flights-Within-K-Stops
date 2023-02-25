@@ -9,7 +9,6 @@ class Solution {
 
     minHeap.emplace(0, src, k + 1);  // Start with node src with d == 0
     dist[src][k + 1] = 0;
-
     for (const vector<int>& f : flights) {
       const int u = f[0];
       const int v = f[1];
