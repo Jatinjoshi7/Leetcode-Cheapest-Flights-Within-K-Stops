@@ -15,7 +15,6 @@ class Solution {
       const int w = f[2];
       graph[u].emplace_back(v, w);
     }
-
     while (!minHeap.empty()) {
       const auto [d, u, stops] = minHeap.top();
       minHeap.pop();
